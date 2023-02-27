@@ -1,4 +1,4 @@
 FROM php:7.2-apache 
 COPY zastavka.tar /var/www/html 
-RUN tar -xvf zastavka.tar
+RUN tar -xvf /var/www/html/zastavka.tar
 EXPOSE 80
