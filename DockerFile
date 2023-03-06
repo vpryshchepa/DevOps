@@ -1,3 +1,4 @@
 FROM php:7.2-apache
 COPY /home/jenkins/workspace/Job2/root/zastavka/. /var/www/html
+RUN tar -xvf /home/jenkins/workspace/Job2/zastavka.tar -C
 EXPOSE 80
