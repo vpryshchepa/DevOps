@@ -1,4 +1,4 @@
 FROM php:7.2-apache
-RUN mkdir -p /var/www/html
-COPY /home/jenkins/workspace/Job2/ /var/www/html
+COPY . /var/www/html
+RUN tar -xvf zastavka.tar -C .
 EXPOSE 80
